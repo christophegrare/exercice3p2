@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 3</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" onKeyUp="myFunction()" />
+  </form>
+  <script>
+  /*Dans le fichier HTML fourni,
+  afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier.*/
+  //mise en place d'un onKeyUp apres l'id qui capture sur une touche
+  function myFunction(){
+    //variable appele name on enreqistre l'id
+    var name=document.getElementById('nom').value;
+    // l'alert donne la 1ere touche utilisee du clavier
+    alert(name);
+  }
+  </script>
+</body>
+</html>
